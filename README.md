@@ -6,13 +6,13 @@
 A full-stack, end-to-end MERN ecommerce application using React Context API to handle global state management, GraphQL and Apollo.  Features Stripe payment integration. Installable as a Progressive Web Application. 
 
 ##### Homescreen
-![Homescreen Screenshot](./assets/images/screenshot.png)
+![Homescreen Screenshot](./images/screenshot.png)
 ##### Single Product View
-![Single Product View Screenshot](./assets/images/screenshot2.png)
+![Single Product View Screenshot](./images/screenshot2.png)
 ##### Cart View
-![Cart View Screenshot](./assets/images/screenshot3.png)
+![Cart View Screenshot](./images/screenshot3.png)
 ##### Stripe Payment View
-![Stripe Payment View Screenshot](./assets/images/screenshot4.png)
+![Stripe Payment View Screenshot](./images/screenshot4.png)
 
 
 Visit [Shop Shop Redux](https://nameless-wave-32421.herokuapp.com/)
