@@ -9,12 +9,16 @@ function CategoryMenu() {
 	// const { data: categoryData } = useQuery(QUERY_CATEGORIES);
 	// const categories = categoryData?.categories || [];
 
+  // when component mounts, use useContext wrapper function to retrieve current state and the dispatch method to update state (on load it's empty)
 	const [ state, dispatch ] = useStoreContext();
 
+  // destructure categories property from state
 	const { categories } = state;
 
+  // query category data to be stored in global state in useEffect hook
 	const { loading, data: categoryData } = useQuery(QUERY_CATEGORIES);
 
+  // useEffect hook will run once categoryData is no longer undefined
 	useEffect(
 		() => {
 			// if categoryData exists or has changed from the response of useQuery, then run dispatch()
@@ -40,6 +44,7 @@ function CategoryMenu() {
 		[ categoryData, loading, dispatch ]
   );
   
+  // update current category through global state rather than prop function
   const handleClick = id => {
     dispatch({
       type: UPDATE_CURRENT_CATEGORY,
@@ -50,6 +55,7 @@ function CategoryMenu() {
 	return (
 		<div>
 			<h2>Choose a Category:</h2>
+      {/* now categories data is coming from global state rather than directly from Apollo query */}
 			{categories.map((item) => (
 				<button
 					key={item._id}

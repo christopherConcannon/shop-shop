@@ -29,7 +29,7 @@ function ProductList() {
   useEffect(() => {
     // if there's data to be stored
     if (data) {
-      // store it in the global state object
+      // store it in the global state object. this will allow for offline capabilities and persist product data
       dispatch({
         type: UPDATE_PRODUCTS,
         products: data.products
