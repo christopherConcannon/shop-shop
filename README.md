@@ -15,7 +15,7 @@ A full-stack, end-to-end MERN ecommerce application using React Context API to h
 ![Stripe Payment View Screenshot](./images/screenshot4.png)
 
 
-Visit [Shop Shop Redux](https://nameless-wave-32421.herokuapp.com/)
+Visit [Shop Shop](https://shop-shop-xo.herokuapp.com/)
 
 ## Table of Contents
   * [Installation](#installation)
